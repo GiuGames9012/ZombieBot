@@ -22,7 +22,7 @@ client.on('guildMemberRemove',(member) => {
     canal.send(`**${member.username}** se ha ido F :slight_frown:`);
 });
 
-var prefix = config.prefix;
+var prefix ="." ;
 
 client.on("message", (message) => {
   if (message.content.startsWith(prefix + "ping")) {
